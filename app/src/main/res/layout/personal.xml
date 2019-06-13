@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人信息" />
+    <Button
+        android:id="@+id/building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="楼层管理" />
+    <Button
+        android:id="@+id/outin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学生出入" />
+    <Button
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评分管理" />
+    <Button
+        android:id="@+id/dormitory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学生宿舍管理" />
+
+</LinearLayout>
