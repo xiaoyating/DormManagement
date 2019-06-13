@@ -11,4 +11,8 @@ class MyDBHelper {
     public SQLiteDatabase getReadableDatabase() {
         return null;
     }
+
+    public SQLiteDatabase getWritableDatabase() {
+        return null;
+    }
 }

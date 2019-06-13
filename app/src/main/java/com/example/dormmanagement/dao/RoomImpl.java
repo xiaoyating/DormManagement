@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.dormmanagement.model.Room;
 
+import java.util.ArrayList;
 import java.util.Currency;
 import java.util.List;
 
@@ -27,25 +28,57 @@ public class RoomImpl implements RoomDao{
 
         //2.查询
         String sql="select*from t_room";
-        Cursor cursor=db.rawQuery(sql,null);
+        Cursor cursor=db.rawQuery(sql,null);//跟ResultSet
         //3.处理结果
+        if (cursor!=null&&cursor.getCount()>0){
+            rooms=new ArrayList<>();
+            while (cursor.moveToNext()){
+                Room room=new Room();
+                room.setRoomName(cursor.getString(cursor.getColumnIndex("room_name")));
+                room.setExpertNumber(cursor.getInt(cursor.getColumnIndex("expect_num")));
+                rooms.add(room);
+            }
+            //4.cursor
+            cursor.close();
+        }
 
-        //4.返回
+        //5.返回
         return rooms;
     }
 
     @Override
     public void insert(Room room) {
+        //1.获取db对象
+        db=helper.getWritableDatabase();
+        String sql="insert into t_room values(null,?,?,?,?,?,?)";
+        //2.执行sql对象
+        db.execSQL(sql,new Object[]{
+                room.getRoomName(),
+                room.getRoomSex(),
+                room.getExpertNumber(),
+                room.getRealNumber(),
+                room.getCost(),
+                room.getRemark()});
 
     }
 
     @Override
     public void update(Room room) {
 
+        db=helper.getWritableDatabase();
+        String sql="update  t_room set real_number=? where room_name=?";
+        //2.执行sql对象
+        db.execSQL(sql,new Object[]{
+                room.getRealNumber(),
+                room.getRoomName()});
     }
 
     @Override
     public void delete(String roomName) {
+        db=helper.getWritableDatabase();
 
+        String sql="delete from t_room  where room_name=?";
+        //2.执行sql对象
+        db.execSQL(sql,new Object[]{roomName});
     }
 }
