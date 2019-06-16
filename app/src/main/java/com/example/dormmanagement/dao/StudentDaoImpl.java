@@ -44,7 +44,7 @@ public class StudentDaoImpl implements StudentDao {
         //5.返回
         return students;
     }
-
+    //添加
     @Override
     public void insert(Student student) {
     //1.获取db对象
@@ -62,7 +62,7 @@ public class StudentDaoImpl implements StudentDao {
         });
         db.close();
     }
-//添加
+//修改
     @Override
     public void update(Student student) {
         db=helper.getWritableDatabase();

@@ -1,5 +1,6 @@
 package com.example.dormmanagement.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,14 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.dormmanagement.R;
-import com.example.dormmanagement.model.Room;
-import com.example.dormmanagement.model.Student;
-import com.example.dormmanagement.service.StudentService;
+import com.example.dormmanagement.ui.PersonActivity;
+import com.example.dormmanagement.ui.StudentActivity;
 
-public class StudentAddActivity extends AppCompatActivity {
+public class StudentAddActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText etName;
     private EditText etPassword;
-    private Button student;
+    private Button btnAdd;
     private Button administrators;
 
     @Override
@@ -23,22 +23,59 @@ public class StudentAddActivity extends AppCompatActivity {
         setContentView(R.layout.main);
 
         etName = findViewById(R.id.name);
-        etPassword=findViewById(R.id.password);
+        etPassword = findViewById(R.id.password);
         Button btnAdd = findViewById(R.id.student);
+        Button administrators = findViewById(R.id.administrators);
         //学生登录的点击事件
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnAdd.setOnClickListener(this);
+        administrators.setOnClickListener(this);
+
+
 //                Room room = new Room();
 //                room.setRoomName(etName.getText().toString());
 
-                Student student=new Student();
-                student.setname(etName.getText().toString());
-                StudentService service = new StudentService(StudentAddActivity.this);
-                service.insert(student);
+//                Student student = new Student();
+//                student.setname(etName.getText().toString());
+//                StudentService service = new StudentService(StudentAddActivity.this);
+//                service.insert(student);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.student:
+                Intent intent = new Intent();
+                intent = new Intent(StudentAddActivity.this, StudentActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.administrators:
+                intent = new Intent(StudentAddActivity.this, PersonActivity.class);
+                startActivity(intent);
+                break;
+
+
+
+
+
+
+        }
+
+
+//        Button btnStu = findViewById(R.id.administrators);
+//        btnStu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent();
+//                switch (v.getId()) {
+//                    case R.id.administrators:
+//                        intent = new Intent(StudentAddActivity.this, Person.class);
+//                        startActivity(intent);
+//                        break;
+//                }
+//            }
+//        });
 
 
             }
-        });
-    }
 }

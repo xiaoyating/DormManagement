@@ -4,11 +4,12 @@ public class Student {
     private int id;
     private String number;
     private String name;
-    private String major;
     private int age;
     private String sex;
     private int roomnumber;
     private int storey;
+
+
 
     public int getId() {
         return id;
@@ -32,14 +33,6 @@ public class Student {
 
     public void setname(String name) {
         this.name = name;
-    }
-
-    public String getMajor() {
-        return major;
-    }
-
-    public void setMajor(String major) {
-        this.major = major;
     }
 
     public int getAge() {
@@ -84,7 +77,6 @@ public class Student {
                 "id=" + id +
                 ", number='" + number + '\'' +
                 ", name='" + name + '\'' +
-                ", major='" + major + '\'' +
                 ", age=" + age +
                 ", sex='" + sex + '\'' +
                 ", roomnumber=" + roomnumber +
@@ -97,7 +89,6 @@ public class Student {
             "id integer primary key not null," +
             "number varchar not null," +
             "name varchar(6) not null," +
-            "major text not null," +
             "age integer not null," +
             "sex varchar default'女'," +
             "roomnumber integer not null ," +

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="南工院宿舍管理系统"
+            android:textSize="40dp"
+            android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理端"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="学生信息" />
+    <Button
+        android:id="@+id/building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="楼层管理" />
+    <Button
+        android:id="@+id/outin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学生出入" />
+    <Button
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评分管理" />
+    <Button
+        android:id="@+id/dormitory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学生宿舍管理" />
+    <Button
+        android:id="@+id/repair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="报修系统" />
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="320dp"
+        android:text="退出"/>
+</LinearLayout>
