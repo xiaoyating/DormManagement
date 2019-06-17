@@ -16,7 +16,7 @@ public class StudentDaoImpl implements StudentDao {
     public StudentDaoImpl(Context context) {
         //调用MYBHelper类的构造方法时，如发现demo.db不存在会调用onCreate创建
         //若发现demo.db存在，且version的版本与以有的不一致，则调用onUpgrade 方法更新
-        helper = new DBHelper(context, 1);
+        helper = new DBHelper(context);
     }
 
     @Override

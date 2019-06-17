@@ -1,18 +1,37 @@
 package com.example.dormmanagement.model;
 
-public class Room{
+import java.io.Serializable;
+
+public class Room implements Serializable {
+    public static final String TBL_ROOM="create table room("+
+            "id int storey primary key not null,"+
+            "roomnumber varchar(20) not null,"+
+            "staynumber integer not null," +
+            "residentnumber integer not null,"+
+            "monery integer not null)";
+
+
    private int id;
-   private String roomName;
-   private String roomSex;
-   private int expertNumber;
-   private int realNumber;
-   private int cost;
-   private String remark;
+   private String roomnumber;
+   private int staynumber;
+   private int residentnumber;
+   private int monery;
 
-   public Room(){
+    public  Room(){
 
-   }
+    }
 
+    public Room(int id, String roomnumber, int staynumber, int residentnumber, int monery) {
+        this.id = id;
+        this.roomnumber = roomnumber;
+        this.staynumber = staynumber;
+        this.residentnumber = residentnumber;
+        this.monery = monery;
+    }
+
+    public static String getTblRoom() {
+        return TBL_ROOM;
+    }
 
     public int getId() {
         return id;
@@ -22,65 +41,46 @@ public class Room{
         this.id = id;
     }
 
-    public String getRoomName() {
-        return roomName;
+    public String getRoomnumber() {
+        return roomnumber;
     }
 
-    public void setRoomName(String roomName) {
-        this.roomName = roomName;
+    public void setRoomnumber(String roomnumber) {
+        this.roomnumber = roomnumber;
     }
 
-    public String getRoomSex() {
-        return roomSex;
+    public int getStaynumber() {
+        return staynumber;
     }
 
-    public void setRoomSex(String roomSex) {
-        this.roomSex = roomSex;
+    public void setStaynumber(int staynumber) {
+        this.staynumber = staynumber;
     }
 
-    public int getExpertNumber() {
-        return expertNumber;
+    public int getResidentnumber() {
+        return residentnumber;
     }
 
-    public void setExpertNumber(int expertNumber) {
-        this.expertNumber = expertNumber;
+    public void setResidentnumber(int residentnumber) {
+        this.residentnumber = residentnumber;
     }
 
-    public int getRealNumber() {
-        return realNumber;
+    public int getMonery() {
+        return monery;
     }
 
-    public void setRealNumber(int realNumber) {
-        this.realNumber = realNumber;
+    public void setMonery(int monery) {
+        this.monery = monery;
     }
-
-    public int getCost() {
-        return cost;
-    }
-
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
-
-    public String getRemark() {
-        return remark;
-    }
-
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
-
 
     @Override
     public String toString() {
         return "Room{" +
                 "id=" + id +
-                ", roomName='" + roomName + '\'' +
-                ", roomSex='" + roomSex + '\'' +
-                ", expertNumber=" + expertNumber +
-                ", realNumber=" + realNumber +
-                ", cost=" + cost +
-                ", remark='" + remark + '\'' +
+                ", roomnumber='" + roomnumber + '\'' +
+                ", staynumber=" + staynumber +
+                ", residentnumber=" + residentnumber +
+                ", monery=" + monery +
                 '}';
     }
 }

@@ -14,6 +14,10 @@ public interface RoomDao {
 //    Room select(String roomName);
 //    List<Room> selectByCost(int cost);
 
+    Room select(String roomName);
+
+    List<Room> selectByNumber();
+
     //增删改一个宿舍
     void insert(Room room);
     void update(Room room);

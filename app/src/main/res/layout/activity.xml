@@ -24,11 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="学生信息" />
-    <Button
-        android:id="@+id/building"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="楼层管理" />
+
     <Button
         android:id="@+id/outin"
         android:layout_width="match_parent"
