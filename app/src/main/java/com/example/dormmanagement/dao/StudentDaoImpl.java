@@ -33,7 +33,7 @@ public class StudentDaoImpl implements StudentDao {
             students=new ArrayList<>();
             while (cursor.moveToNext()){
                 Student student=new Student();
-                student.setMajor(cursor.getString(cursor.getColumnIndex("name")));
+                student.setname(cursor.getString(cursor.getColumnIndex("name")));
                 student.setAge(cursor.getInt(cursor.getColumnIndex("Age")));
                 students.add(student);
             }
@@ -54,7 +54,6 @@ public class StudentDaoImpl implements StudentDao {
         db.execSQL(sql,new Object[]{
                 student.getnumber(),
                 student.getname(),
-                student.getMajor(),
                 student.getAge(),
                 student.getSex(),
                 student.getRoomnumber(),
