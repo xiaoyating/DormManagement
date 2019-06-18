@@ -1,6 +1,14 @@
 package com.example.dormmanagement.model;
 
 public class Student {
+    public static final String TBL_STUDENT = "create table student(" +
+            "id integer primary key not null," +
+            "number varchar not null," +
+            "name varchar(6) not null," +
+            "age integer not null," +
+            "sex varchar default'女'," +
+            "roomnumber integer not null ," +
+            "storey integer  not null) ";;
     private int id;
     private String number;
     private String name;
@@ -85,13 +93,6 @@ public class Student {
                 '}';
     }
 
-    private final String TBL_STUDENT="create table student(" +
-            "id integer primary key not null," +
-            "number varchar not null," +
-            "name varchar(6) not null," +
-            "age integer not null," +
-            "sex varchar default'女'," +
-            "roomnumber integer not null ," +
-            "storey integer  not null) ";
+
 }
 

@@ -24,6 +24,9 @@
         <activity android:name=".activity.RoomActivity" />
         <activity android:name=".activity.GradeActivity" />
         <activity android:name=".activity.GradestuActivity" />
+        <activity android:name=".activity.ZhuceActivity" />
+        <activity android:name=".activity.ManagerActivity" />
+
     </application>
 
 </manifest>
