@@ -45,7 +45,6 @@ public class RoomActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         etRoomNumber=findViewById(R.id.et_roomnumber);
-        spRoomSex=findViewById(R.id.et_sex);
         etStayNumber=findViewById(R.id.et_staynumber);
         etResidentNumber=findViewById(R.id.et_residentnumber);
         etMonery=findViewById(R.id.et_monery);
@@ -55,12 +54,11 @@ public class RoomActivity extends AppCompatActivity implements View.OnClickListe
         btnSave.setOnClickListener(this);
         btnCancel.setOnClickListener(this);
 
-        sexes= Arrays.asList(getResources().getStringArray(R.array.sex));
-        spRoomSex.setAdapter(new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_spinner_dropdown_item,
-                sexes
-        ));
+//        spRoomSex.setAdapter(new ArrayAdapter<>(
+//                this,
+//                android.R.layout.simple_spinner_dropdown_item,
+//                sexes
+//        ));
     }
     private void initData() {
         Intent intent=getIntent();

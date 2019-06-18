@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView5"
@@ -11,40 +12,49 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="学生公寓评分查询"
+        android:layout_marginTop="40dp"
         android:textSize="50dp"
         android:textColor="#000fff"
         tools:layout_editor_absoluteX="7dp"
         tools:layout_editor_absoluteY="15dp"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:text="请输入房间号："
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="110dp"
-        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/textView8"
-        android:layout_width="119dp"
-        android:layout_height="35dp"
-        android:textSize="28dp"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="110dp"
-        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入房间号："
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="110dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/in"
+            android:layout_width="119dp"
+            android:layout_height="35dp"
+            android:textSize="28dp"
+            tools:layout_editor_absoluteX="262dp"
+            tools:layout_editor_absoluteY="110dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/query"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="查询"
         android:textSize="20dp"
+        android:layout_marginTop="40dp"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="200dp"
         tools:ignore="MissingConstraints" />
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
