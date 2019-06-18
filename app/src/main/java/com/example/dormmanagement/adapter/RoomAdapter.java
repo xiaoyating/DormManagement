@@ -34,7 +34,7 @@ public class RoomAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView==null){
-            LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_stay_main, parent, false);
+            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_stay_main, parent, false);
             holder=new ViewHolder();
 
             holder.tvNumber=convertView.findViewById(R.id.roomnumber);

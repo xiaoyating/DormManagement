@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.dormmanagement.R;
-import com.example.dormmanagement.ui.PersonActivity;
-import com.example.dormmanagement.ui.StudentActivity;
 
 public class StudentAddActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText etName;
@@ -24,8 +22,8 @@ public class StudentAddActivity extends AppCompatActivity implements View.OnClic
 
         etName = findViewById(R.id.name);
         etPassword = findViewById(R.id.password);
-        Button btnAdd = findViewById(R.id.student);
-        Button administrators = findViewById(R.id.administrators);
+        btnAdd = findViewById(R.id.student);
+        administrators = findViewById(R.id.administrators);
         //学生登录的点击事件
         btnAdd.setOnClickListener(this);
         administrators.setOnClickListener(this);
@@ -45,37 +43,15 @@ public class StudentAddActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.student:
-                Intent intent = new Intent();
-                intent = new Intent(StudentAddActivity.this, StudentActivity.class);
+                Intent intent = new Intent(StudentAddActivity.this,StudentActivity.class);
                 startActivity(intent);
                 break;
             case R.id.administrators:
-                intent = new Intent(StudentAddActivity.this, PersonActivity.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(StudentAddActivity.this, PersonActivity.class);
+                startActivity(intent1);
                 break;
-
-
-
-
-
 
         }
 
-
-//        Button btnStu = findViewById(R.id.administrators);
-//        btnStu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent();
-//                switch (v.getId()) {
-//                    case R.id.administrators:
-//                        intent = new Intent(StudentAddActivity.this, Person.class);
-//                        startActivity(intent);
-//                        break;
-//                }
-//            }
-//        });
-
-
-            }
+    }
 }

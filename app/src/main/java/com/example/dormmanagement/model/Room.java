@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Room implements Serializable {
     public static final String TBL_ROOM="create table room("+
-            "id int storey primary key not null,"+
+            "id integer primary key autoincrement not null,"+
             "roomnumber varchar(20) not null,"+
             "staynumber integer not null," +
             "residentnumber integer not null,"+

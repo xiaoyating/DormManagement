@@ -32,15 +32,15 @@
         android:layout_height="wrap_content"
         android:text="我的出入" />
     <Button
-        android:id="@+id/grade"
+        android:id="@+id/graded"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="评分" />
+        android:text="评分查询" />
     <Button
-        android:id="@+id/repair"
+        android:id="@+id/repaird"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="报修" />
+        android:text="申请报修" />
     <Button
         android:id="@+id/out"
         android:layout_width="wrap_content"

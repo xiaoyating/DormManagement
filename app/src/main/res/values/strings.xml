@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">DormManagement</string>
-      <string-array name="sex">
-      <item>女</item>
-      <item>男</item>
-      </string-array>
+    <string-array name="sex">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
 
     <string name="sex_prompt">请选择性别</string>
 

@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.RepairActivity"></activity>
+        <activity android:name=".activity.RepairstuActivity" />
         <activity android:name=".activity.StudentAddActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +22,8 @@
         <activity android:name=".activity.StudentActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.RoomActivity" />
+        <activity android:name=".activity.GradeActivity" />
+        <activity android:name=".activity.GradestuActivity" />
     </application>
 
 </manifest>

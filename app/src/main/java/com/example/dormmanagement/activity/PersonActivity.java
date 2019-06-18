@@ -15,8 +15,12 @@ public class PersonActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
 
-        Button btnDor=findViewById(R.id.dormitory);
+        Button  btnDor=findViewById(R.id.dormitory);
+        Button  btnGra=findViewById(R.id.grade);
+        Button  btnRep=findViewById(R.id.repair);
         btnDor.setOnClickListener(this);
+        btnGra.setOnClickListener(this);
+        btnRep.setOnClickListener(this);
     }
 
 
@@ -25,8 +29,15 @@ public class PersonActivity extends AppCompatActivity implements View.OnClickLis
         Intent intent=new Intent();
         switch (v.getId()){
             case R.id.dormitory:
-
-                intent=new Intent(PersonActivity.this, MainActivity.class);
+                 intent=new Intent(PersonActivity.this, MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.grade:
+                intent=new Intent(PersonActivity.this,GradeActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.repair:
+                intent=new Intent(PersonActivity.this,RepairActivity.class);
                 startActivity(intent);
                 break;
         }

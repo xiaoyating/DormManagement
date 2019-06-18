@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     <TextView
-        android:id="@+id/roomnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="宿舍名"
@@ -16,7 +16,6 @@
         android:layout_marginTop="20dp"
         android:textSize="20dp"/>
     <TextView
-        android:id="@+id/staynumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="应住人数"
@@ -24,7 +23,6 @@
         android:layout_marginTop="20dp"
         android:textSize="20dp"/>
     <TextView
-        android:id="@+id/residentnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="实住人数"
@@ -32,7 +30,6 @@
         android:layout_marginTop="20dp"
         android:textSize="20dp"/>
     <TextView
-        android:id="@+id/monery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="住宿费"

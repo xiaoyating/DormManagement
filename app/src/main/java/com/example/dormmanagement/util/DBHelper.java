@@ -12,7 +12,7 @@ import static com.example.dormmanagement.model.Room.TBL_ROOM;
 //add unisi
 public class DBHelper extends SQLiteOpenHelper {
     public final String TBL_STUDENT="create table student(" +
-            "id integer primary key not null," +
+            "id integer primary key autoincrement not null," +
             "s_number varchar not null," +
             "s_name varchar(6) not null," +
             "major text not null," +

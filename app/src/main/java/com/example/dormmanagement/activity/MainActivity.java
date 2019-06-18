@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -99,8 +100,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onActivityReenter(int resultCode, Intent data) {
-        super.onActivityReenter(resultCode, data);
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (resultCode != Activity.RESULT_OK) {
             return;
         }
@@ -110,14 +111,15 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             selectedRoom= (Room) bundle.get("room");
-            if (resultCode == MODIFY_REQUEST) {
+            if (requestCode == MODIFY_REQUEST) {
                 rooms.set(selectedPos, selectedRoom);
-            } else if (resultCode == ADD_REQUEST) {
+            } else if (requestCode == ADD_REQUEST) {
                 rooms.add(selectedRoom);
             }
             roomAdapter.notifyDataSetChanged();
         }
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
