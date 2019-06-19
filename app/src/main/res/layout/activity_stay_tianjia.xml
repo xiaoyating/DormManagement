@@ -45,14 +45,11 @@
                 android:layout_marginLeft="10dp"
                 android:textSize="25dp"/>
 
-            <Spinner
+            <EditText
                 android:id="@+id/et_sex"
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:ems="16"
-                android:hint="住宿性别"
-                android:prompt="@string/sex_prompt"
-                android:spinnerMode="dialog"/>
+                android:layout_height="wrap_content"
+                android:text="女"/>
 
     </LinearLayout>
 

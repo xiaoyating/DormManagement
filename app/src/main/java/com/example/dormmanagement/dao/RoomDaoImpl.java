@@ -46,12 +46,12 @@ public class RoomDaoImpl implements RoomDao{
     }
 
     @Override
-    public void delete(String roomName) {
+    public void delete(String roomNumber) {
         db=dbHelper.getWritableDatabase();
 
-        String sql="delete from room  where roomname=?";
+        String sql="delete from room  where roomnumber=?";
         //2.执行sql对象
-        db.execSQL(sql,new Object[]{roomName});
+        db.execSQL(sql,new Object[]{roomNumber});
     }
 
 

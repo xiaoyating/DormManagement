@@ -30,7 +30,7 @@ public class RoomServiceImpl implements RoomService{
     }
 
     @Override
-    public void delete(String roomName) {
-        roomDao.delete(roomName);
+    public void delete(String roomNumber) {
+        roomDao.delete(roomNumber);
     }
 }
