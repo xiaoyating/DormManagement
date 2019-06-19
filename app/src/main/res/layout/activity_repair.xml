@@ -11,9 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="报修"
-        android:textSize="40dp"
-        />
-
+        android:textSize="40dp" />
 
 </LinearLayout>
 
@@ -22,7 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,6 +44,7 @@
                 android:textSize="30dp" />
 
             <EditText
+                android:id="@+id/rt_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="请填写姓名"
@@ -68,6 +66,7 @@
                 android:textSize="30dp" />
 
             <EditText
+                android:id="@+id/rt_namenumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="请填写宿舍号"
@@ -89,6 +88,7 @@
                 android:textSize="30dp" />
 
             <EditText
+                android:id="@+id/rt_problem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="请填写报修问题"
@@ -110,6 +110,7 @@
                 android:textSize="30dp" />
 
             <EditText
+                android:id="@+id/rt_ponenumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="请填写联系方式"
@@ -131,6 +132,7 @@
                 android:textSize="30dp" />
 
             <EditText
+                android:id="@+id/rt_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="请填写报修日期"
@@ -141,20 +143,25 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="100dp">
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btn_preser"
+                android:layout_marginTop="40dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="36dp"
                 android:text="保存" />
-
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="返回" />
 
         </LinearLayout>
-
 
     </LinearLayout>
 
