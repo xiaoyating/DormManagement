@@ -13,6 +13,5 @@ public class GradeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_marksheet);
 
 
-
     }
 }
