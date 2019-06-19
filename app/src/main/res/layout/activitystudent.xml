@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@mipmap/beij">
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,12 +36,12 @@
         android:id="@+id/graded"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="评分查询" />
+        android:text="评分" />
     <Button
         android:id="@+id/repaird"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="申请报修" />
+        android:text="报修" />
     <Button
         android:id="@+id/out"
         android:layout_width="wrap_content"
