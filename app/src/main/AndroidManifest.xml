@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.RepairActivity"></activity>
+        <activity android:name=".activity.OneperActivity"></activity>
+        <activity android:name=".activity.BuildingfourActivity" />
+        <activity android:name=".activity.BuildingThreeActivity" />
+        <activity android:name=".activity.BuildingtwoActivity" />
+        <activity android:name=".activity.BuildingoneActivity" />
+        <activity android:name=".activity.BuildingActivity" />
+        <activity android:name=".activity.OutinActivity" />
         <activity android:name=".activity.RepairstuActivity" />
+        <activity android:name=".activity.RepairActivity" />
         <activity android:name=".activity.StudentAddActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +33,6 @@
         <activity android:name=".activity.GradestuActivity" />
         <activity android:name=".activity.ZhuceActivity" />
         <activity android:name=".activity.ManagerActivity" />
-
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.dormmanagement.R;
 import com.example.dormmanagement.model.Sign;
+import com.example.dormmanagement.model.Student;
 import com.example.dormmanagement.service.SignService;
 
 public class StudentAddActivity extends AppCompatActivity implements View.OnClickListener {
@@ -53,7 +54,8 @@ public class StudentAddActivity extends AppCompatActivity implements View.OnClic
         switch (v.getId()) {
             case R.id.student:
                 //比较用户名的密码是否正确，然后给出提示
-              login1();
+               intent = new Intent(StudentAddActivity.this, StudentActivity.class);
+                startActivity(intent);
                 break;
             case R.id.administrators:
 
@@ -64,29 +66,7 @@ public class StudentAddActivity extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 break;
 
-
-
-
-
-
         }
-
-
-//        Button btnStu = findViewById(R.id.administrators);
-//        btnStu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent();
-//                switch (v.getId()) {
-//                    case R.id.administrators:
-//                        intent = new Intent(StudentAddActivity.this, Person.class);
-//                        startActivity(intent);
-//                        break;
-//                }
-//            }
-//        });
-
-
             }
 
     private void login1() {

@@ -6,13 +6,15 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="0dp"
-            android:text="报修记录查询"
+            android:text="报修"
+            android:layout_gravity="center"
             android:textSize="45dp" />
 
     </LinearLayout>
@@ -51,14 +53,8 @@
             android:gravity="center"
             android:text="联系方式"
             android:textSize="20sp" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="报修日期"
-            android:textSize="20sp" />
     </LinearLayout>
+
     <View
         android:background="@android:color/darker_gray"
         android:layout_width="match_parent"

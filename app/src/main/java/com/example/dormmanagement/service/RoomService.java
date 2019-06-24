@@ -8,7 +8,7 @@ public interface RoomService {
     public List<Room> getAllrooms();
     public void insert(Room room);
     public void modifyRealNumber(Room room);
-    public void delete(String roonName);
+    public void delete(String repairName);
 
 }
 

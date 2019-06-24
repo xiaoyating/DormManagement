@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="学生公寓评分查询"
+        android:text="学生公寓评分"
         android:layout_marginTop="40dp"
         android:textSize="50dp"
         android:textColor="#000fff"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="请输入房间号："
+            android:text="分数："
             android:textSize="30dp"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="110dp"
@@ -36,25 +36,9 @@
 
         <EditText
             android:id="@+id/in"
-            android:layout_width="119dp"
-            android:layout_height="35dp"
-            android:textSize="28dp"
-            tools:layout_editor_absoluteX="262dp"
-            tools:layout_editor_absoluteY="110dp"
-            tools:ignore="MissingConstraints" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入分数"/>
     </LinearLayout>
-
-
-    <Button
-        android:id="@+id/query"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="查询"
-        android:textSize="20dp"
-        android:layout_marginTop="40dp"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="200dp"
-        tools:ignore="MissingConstraints" />
-
 
 </LinearLayout>

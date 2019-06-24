@@ -124,19 +124,6 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="报修日期："
-                android:textSize="30dp" />
-
-            <EditText
-                android:id="@+id/rt_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="请填写报修日期"
-                android:textSize="20dp" />
 
         </LinearLayout>
 
@@ -148,7 +135,7 @@
 
 
             <Button
-                android:id="@+id/btn_preser"
+                android:id="@+id/btn_preser1"
                 android:layout_marginTop="40dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
