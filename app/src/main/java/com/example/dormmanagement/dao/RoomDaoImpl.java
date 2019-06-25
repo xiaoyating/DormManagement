@@ -17,7 +17,7 @@ public class RoomDaoImpl implements RoomDao{
     public RoomDaoImpl(Context context){
         //调用MYBHelper类的构造方法时，如发现demo.db不存在会调用onCreate创建
         //若发现demo.db存在，且version的版本与以有的不一致，则调用onUpgrade 方法更新
-        dbHelper =new DBHelper(context,1);
+        dbHelper =new DBHelper(context,4);
     }
 
     @Override
@@ -54,7 +54,7 @@ public class RoomDaoImpl implements RoomDao{
         db.execSQL(sql,new Object[]{roomNumber});
     }
 
-
+//---------------------------------------------------------------------------------------------------------------------
 
 
     @Override

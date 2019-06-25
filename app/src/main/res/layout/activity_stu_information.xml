@@ -4,16 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="报修"
-        android:textSize="40dp" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生信息"
+            android:textSize="40dp" />
 
-</LinearLayout>
+    </LinearLayout>
 
 
     <LinearLayout
@@ -44,10 +44,75 @@
                 android:textSize="30dp" />
 
             <EditText
-                android:id="@+id/rt_name"
+                android:id="@+id/stu_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="请填写姓名"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="学号："
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/stu_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请填写学号"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="年龄："
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/stu_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请填写年龄"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="性别："
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/stu_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="女"
                 android:textSize="20dp" />
 
         </LinearLayout>
@@ -66,7 +131,7 @@
                 android:textSize="30dp" />
 
             <EditText
-                android:id="@+id/rt_namenumber"
+                android:id="@+id/stu_sushehao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="请填写宿舍号"
@@ -74,58 +139,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="报修问题："
-                android:textSize="30dp" />
-
-            <EditText
-                android:id="@+id/rt_problem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="请填写报修问题"
-                android:textSize="20dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="联系方式："
-                android:textSize="30dp" />
-
-            <EditText
-                android:id="@+id/rt_ponenumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="请填写联系方式"
-                android:textSize="20dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -135,13 +149,13 @@
 
 
             <Button
-                android:id="@+id/btn_preser1"
+                android:id="@+id/btn_baocun"
                 android:layout_marginTop="40dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="保存" />
             <Button
-                android:id="@+id/btn_cancel"
+                android:id="@+id/btn_fanhui"
                 android:layout_marginTop="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

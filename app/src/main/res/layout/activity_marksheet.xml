@@ -24,12 +24,7 @@
         android:id="@+id/btn_number"
         android:text="分数："
         android:textSize="30dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_major"
-        android:text="日期："
-        android:textSize="30dp"/>
+
 
     <Button
         android:id="@+id/btn_confirm"

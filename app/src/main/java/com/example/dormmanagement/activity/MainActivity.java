@@ -143,7 +143,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void savedInstanceState(int activity_stay) {
 
-    }
 }

@@ -18,9 +18,14 @@ public class PersonActivity extends AppCompatActivity implements View.OnClickLis
         Button  btnDor=findViewById(R.id.dormitory);
         Button  btnGra=findViewById(R.id.grade);
         Button  btnRep=findViewById(R.id.repair);
+        Button  btnOutin=findViewById(R.id.outin);
+        Button  btnBuli=findViewById(R.id.building);
+
         btnDor.setOnClickListener(this);
         btnGra.setOnClickListener(this);
         btnRep.setOnClickListener(this);
+        btnOutin.setOnClickListener(this);
+        btnBuli.setOnClickListener(this);
     }
 
 
@@ -37,9 +42,18 @@ public class PersonActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 break;
             case R.id.repair:
-                intent=new Intent(PersonActivity.this,RepairActivity.class);
+                intent=new Intent(PersonActivity.this,RepairstuActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.outin:
+                intent=new Intent(PersonActivity.this,OutinActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.building:
+                intent=new Intent(PersonActivity.this,BuildingActivity.class);
+                startActivity(intent);
+                break;
+
         }
     }
 }

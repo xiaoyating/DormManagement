@@ -19,7 +19,7 @@ public class SignDaoImpl implements SignDao {
         // 调用MyDBHelper类的构造方法时，
         // 若发现demo.db不存在会调用onCreate方法创建
         // 若发现demo.db存在，且version的版本与已有的不一致，则调用onUpgrade方法更新
-        dbHelper = new DBHelper(context,1);
+        dbHelper = new DBHelper(context,4);
     }
 
     @Override
